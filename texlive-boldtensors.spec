@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/boldtensors
+# catalog-date 2008-08-17 01:00:50 +0200
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-boldtensors
 Version:	20080817
 Release:	1
@@ -38,6 +44,7 @@ This package provides bold latin and greek characters within
 %{_texmfdistdir}/tex/latex/boldtensors/boldtensors.sty
 %doc %{_texmfdistdir}/doc/latex/boldtensors/boldtensors.pdf
 %doc %{_texmfdistdir}/doc/latex/boldtensors/boldtensors.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -48,3 +55,5 @@ This package provides bold latin and greek characters within
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
