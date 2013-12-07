@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-boldtensors
 Version:	20080817
-Release:	4
+Release:	5
 Summary:	Bold latin and greek characters through simple prefix characters
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/boldtensors
